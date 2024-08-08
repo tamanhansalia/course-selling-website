@@ -145,6 +145,35 @@ section {
   color: #555;
 }
 
+.testimonials-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
 .cta-banner {
   background-color: #1e90ff;
   color: #fff;
@@ -179,28 +208,36 @@ section {
 
 .newsletter-signup h2 {
   font-size: 28px;
+  color: #333;
   margin-bottom: 20px;
 }
 
 .newsletter-signup form {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.newsletter-signup input {
+.newsletter-signup input[type="email"] {
   padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 25px;
-  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .newsletter-signup button {
   background-color: dodgerblue;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 25px;
   border: none;
+  border-radius: 25px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .newsletter-signup button:hover {
@@ -208,22 +245,58 @@ section {
 }
 
 footer {
-  background-color: #f7f7f7;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
 }
 
 footer p {
   margin-bottom: 10px;
 }
 
-.social-icons a {
-  color: #333;
-  margin: 0 10px;
-  font-size: 20px;
-  text-decoration: none;
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.social-icons a:hover {
+footer .social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
   color: dodgerblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header.hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .about-content {
+    max-width: 100%;
+  }
+
+  .features-container,
+  .testimonials-container {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    padding: 20px 0;
+  }
+  .about-content {
+    padding: 0;
+  }
+  .hero-image img,
+  .feature img {
+    max-width: 230px;
+    height: 230px;
+  }
 }
