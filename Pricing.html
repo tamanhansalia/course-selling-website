@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - LearnSphere</title>
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-logo">
+        <a href="Index.html">LearnSphere</a>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <i class="bx bx-menu-alt-left"></i>
+      </div>
+      <div class="tab-container" id="tab-container">
+        <a href="Index.html" class="tab_label" id="home">Home</a>
+        <a href="Courses.html" class="tab_label" id="courses">Courses</a>
+        <a href="Contact.html" class="tab_label" id="contact">Contact</a>
+        <a href="Pricing.html" class="tab_label" id="pricing">Pricing</a>
+        <a href="MyCourses.html" class="tab_label" id="mycourses">My Courses</a>
+        <a href="Aboutus.html" class="tab_label" id="Aboutus">About Us</a>
+        <a href="Login.html" class="tab_label" id="login">Login/SignUp</a>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1>Pricing Plans</h1>
+      <p>Choose a plan that suits your learning needs</p>
+    </header>
+
+    <section class="pricing-tiers">
+      <div class="pricing-card">
+        <h2>Free Plan</h2>
+        <p class="price">$0 <span>/month</span></p>
+        <ul>
+          <li><i class="bx bx-check rounded-icon"></i>Access to 5 courses</li>
+          <li><i class="bx bx-check rounded-icon"></i>Community support</li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Basic course materials
+          </li>
+        </ul>
+        <button class="btn">Sign Up for Free</button>
+      </div>
+      <div class="pricing-card">
+        <h2>Standard Plan</h2>
+        <p class="price">$19 <span>/month</span></p>
+        <ul>
+          <li><i class="bx bx-check rounded-icon"></i>Access to 50+ courses</li>
+          <li><i class="bx bx-check rounded-icon"></i>Community support</li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Premium course materials
+          </li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Monthly live Q&A sessions
+          </li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Certificate of completion
+          </li>
+        </ul>
+        <button class="btn">Subscribe Now</button>
+      </div>
+      <div class="pricing-card">
+        <h2>Premium Plan</h2>
+        <p class="price">$49 <span>/month</span></p>
+        <ul>
+          <li><i class="bx bx-check rounded-icon"></i>Access to all courses</li>
+          <li><i class="bx bx-check rounded-icon"></i>Community support</li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Premium course materials
+          </li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Weekly live Q&A sessions
+          </li>
+          <li>
+            <i class="bx bx-check rounded-icon"></i>Certificate of completion
+          </li>
+          <li><i class="bx bx-check rounded-icon"></i>One-on-one mentorship</li>
+        </ul>
+        <button class="btn">Go Premium</button>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <header class="header">
+        <p>Testimonial</p>
+        <h1>What Our Students Say</h1>
+      </header>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <img src="./img/t1.jpg" alt="Max Thunder" class="testimonial-img" />
+          <p>"Great platform for learning new skills!"</p>
+          <h4>Max Thunder</h4>
+        </div>
+        <div class="testimonial">
+          <img src="./img/t2.jpg" alt="Zara Frost" class="testimonial-img" />
+          <p>"The courses are very well structured."</p>
+          <h4>Zara Frost</h4>
+        </div>
+        <div class="testimonial">
+          <img
+            src="./img/t3.jpg"
+            alt="Kira Wolf
+"
+            class="testimonial-img"
+          />
+          <p>"I love the community support."</p>
+          <h4>Kira Wolf</h4>
+        </div>
+        <div class="testimonial">
+          <img src="./img/t4.jpg" alt="Michael Brown" class="testimonial-img" />
+          <p>"Excellent material and instructors."</p>
+          <h4>Michael Brown</h4>
+        </div>
+        <div class="testimonial">
+          <img src="./img/t5.jpg" alt="Orion Blaze" class="testimonial-img" />
+          <p>"Highly recommend the premium plan."</p>
+          <h4>Orion Blaze</h4>
+        </div>
+        <div class="testimonial">
+          <img
+            src="path/to/photo6.jpg"
+            alt="Travis Scott"
+            class="testimonial-img"
+          />
+          <p>"very confident after finishing this course "</p>
+          <h4>Orion Blaze</h4>
+        </div>
+      </div>
+      <div class="arrows">
+        <i class="bx bx-left-arrow-alt" id="prev"></i>
+        <i class="bx bx-right-arrow-alt" id="next"></i>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 LearnSphere. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      const testimonials = document.querySelectorAll(".testimonial");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      let index = 0;
+
+      function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+          testimonial.style.display = i === index ? "block" : "none";
+        });
+      }
+
+      prev.addEventListener("click", () => {
+        index = (index - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(index);
+      });
+
+      next.addEventListener("click", () => {
+        index = (index + 1) % testimonials.length;
+        showTestimonial(index);
+      });
+
+      showTestimonial(index);
+    </script>
+
+    <script>
+      const currentLocation = window.location.href;
+      const navLinks = document.querySelectorAll(".tab_label");
+
+      navLinks.forEach((link) => {
+        if (currentLocation.includes(link.href)) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+
+      document
+        .getElementById("hamburger-menu")
+        .addEventListener("click", function () {
+          const tabContainer = document.getElementById("tab-container");
+          tabContainer.classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>

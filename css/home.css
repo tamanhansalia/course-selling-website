@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 50%;
+  padding: 50px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+  background-color: #1e90ff;
+}
+
+.hero-image img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 25px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-section {
+  background-color: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.about-content {
+  max-width: 50%;
+  padding: 50px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-content .btn {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.about-content .btn:hover {
+  background-color: #1e90ff;
+}
+
+.features-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.feature img {
+  max-width: 320px;
+  height: 320px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+}
+
+.cta-banner {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cta-banner .btn-cta {
+  background-color: #fff;
+  color: #1e90ff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-banner .btn-cta:hover {
+  background-color: #f7f7f7;
+}
+
+.newsletter-signup {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.newsletter-signup h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-signup input {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-signup button {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+  background-color: #1e90ff;
+}
+
+footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: dodgerblue;
+}

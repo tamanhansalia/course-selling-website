@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - LearnSphere</title>
+    <link rel="stylesheet" href="./css/Signup.css" />
+  </head>
+  <body>
+
+    
+    <div class="container">
+      <form id="signupForm">
+        <p class="title">Register</p>
+        <div class="input-container">
+          <input
+            id="fullName"
+            placeholder=" "
+            class="input-field"
+            type="text"
+            required
+          />
+          <label for="fullName" class="input-label">Full Name</label>
+          <span class="input-highlight"></span>
+        </div>
+        <div class="input-container">
+          <input
+            id="signupEmail"
+            placeholder=" "
+            class="input-field"
+            type="email"
+            required
+          />
+          <label for="signupEmail" class="input-label">Email</label>
+          <span class="input-highlight"></span>
+        </div>
+        <div class="input-container">
+          <input
+            id="signupPassword"
+            placeholder=" "
+            class="input-field"
+            type="password"
+            required
+          />
+          <label for="signupPassword" class="input-label">Password</label>
+          <span class="input-highlight"></span>
+        </div>
+        <div class="input-container">
+          <input
+            id="confirmPassword"
+            placeholder=" "
+            class="input-field"
+            type="password"
+            required
+          />
+          <label for="confirmPassword" class="input-label"
+            >Confirm Password</label
+          >
+          <span class="input-highlight"></span>
+        </div>
+        <label class="terms-label">
+          Accept terms of use
+          <div class="toggle-switch">
+            <input class="checkbox-input" type="checkbox" required />
+            <span class="slider"></span>
+          </div>
+        </label>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="Login.html">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>

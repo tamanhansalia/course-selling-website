@@ -1,0 +1,107 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.tab-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #dadadb;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.tab_label {
+  width: 130px;
+  height: 35px;
+  position: relative;
+  z-index: 999;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab_label:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.tab_label.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .tab-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #dadadb;
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 60px; /* Adjust according to the height of the navbar */
+    left: 0;
+    z-index: 1000;
+  }
+
+  .tab-container.show {
+    display: flex;
+  }
+
+  .tab_label {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .tab_label:last-child {
+    border-bottom: none;
+  }
+}

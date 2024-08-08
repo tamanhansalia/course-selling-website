@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - LearnSphere</title>
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-logo">
+        <a href="Index.html">LearnSphere</a>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <i class="bx bx-menu-alt-left"></i>
+      </div>
+      <div class="tab-container" id="tab-container">
+        <a href="Index.html" class="tab_label" id="home">Home</a>
+        <a href="Courses.html" class="tab_label" id="courses">Courses</a>
+        <a href="Contact.html" class="tab_label" id="contact">Contact</a>
+        <a href="Pricing.html" class="tab_label" id="pricing">Pricing</a>
+        <a href="MyCourses.html" class="tab_label" id="mycourses">My Courses</a>
+        <a href="Aboutus.html" class="tab_label" id="Aboutus">About Us</a>
+        <a href="Login.html" class="tab_label" id="login">Login/SignUp</a>
+      </div>
+    </nav>
+
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to LearnSphere</h1>
+        <p>Empower your learning journey with the best online courses.</p>
+        <a href="Courses.html" class="btn">Start Learning</a>
+      </div>
+      <div class="hero-image">
+        <img src="./img/hero-image.jpg" alt="Online Learning" />
+      </div>
+    </header>
+
+    <section class="about-section">
+      <div class="about-image">
+        <img src="./img/about-image.jpg" alt="About Us" />
+      </div>
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          At LearnSphere, we are dedicated to providing quality education
+          accessible to everyone, anywhere.
+        </p>
+        <a href="Aboutus.html" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <h2>Our Features</h2>
+      <div class="features-container">
+        <div class="feature">
+          <img src="./img/t4.jpg" alt="Feature 1" />
+          <h3>Expert Instructors</h3>
+          <p>Learn from industry experts with years of experience.</p>
+        </div>
+        <div class="feature">
+          <img src="./img/f2.jpg" alt="Feature 2" />
+          <h3>Flexible Learning</h3>
+          <p>Study at your own pace with our flexible courses.</p>
+        </div>
+        <div class="feature">
+          <img src="./img/f3.jpg" alt="Feature 3" />
+          <h3>Certifications</h3>
+          <p>Earn certificates to boost your career.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <h2>Ready to Start Learning?</h2>
+      <a href="Courses.html" class="btn-cta">Explore Courses</a>
+    </section>
+
+    <section class="newsletter-signup">
+      <h2>Stay Updated!</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 LearnSphere. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      const currentLocation = window.location.href;
+
+      const navLinks = document.querySelectorAll(".tab_label");
+
+      navLinks.forEach((link) => {
+        if (currentLocation.includes(link.href)) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+      document
+        .getElementById("hamburger-menu")
+        .addEventListener("click", function () {
+          const tabContainer = document.getElementById("tab-container");
+          tabContainer.classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
